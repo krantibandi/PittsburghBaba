@@ -1,48 +1,239 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <title>@ViewBag.Title - My ASP.NET MVC Application</title>
-        <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
-        <meta name="viewport" content="width=device-width" />
-        @Styles.Render("~/Content/css")
-        @Scripts.Render("~/bundles/modernizr")
-    </head>
-    <body>
-        <header>
-            <div class="content-wrapper">
-                <div class="float-left">
-                    <p class="site-title">@Html.ActionLink("your logo here", "Index", "Home")</p>
-                </div>
-                <div class="float-right">
-                    <section id="login">
-                        @Html.Partial("_LoginPartial")
-                    </section>
-                    <nav>
-                        <ul id="menu">
-                            <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                            <li>@Html.ActionLink("About", "About", "Home")</li>
-                            <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-        </header>
-        <div id="body">
-            @RenderSection("featured", required: false)
-            <section class="content-wrapper main-content clear-fix">
-                @RenderBody()
-            </section>
-        </div>
-        <footer>
-            <div class="content-wrapper">
-                <div class="float-left">
-                    <p>&copy; @DateTime.Now.Year - My ASP.NET MVC Application</p>
-                </div>
-            </div>
-        </footer>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <title>Welcome to Sri Shirdi Saibaba Temple</title>
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <script src="@System.Web.Optimization.BundleTable.Bundles.ResolveBundleUrl("~/Scripts/js")"></script>
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content="HTML Tidy for Linux/x86 (vers 11 February 2007), see www.w3.org" />
+    <meta http-equiv="content-type" content="text/html; charset=us-ascii" />
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/Content/green/css/mainstyle.css")" />
+    <link rel="stylesheet" type="text/css" media="screen, projection" href="@Url.Content("~/Content/green/css/tabs.css")" />
+    <!--[if IE]><!-->
+    <link rel="stylesheet" type="text/css" media="screen, projection" href="@Url.Content("~/Content/green/css/ie.css")" />
+    <![endif]-->
+    <!--[if IE 8]><!-->
+    <link rel="stylesheet" type="text/css" media="screen, projection" href="@Url.Content("~/Content/green/css/ie8.css")" />
+    <![endif]-->
+    <!--[if IE 7]><!-->
+    <link rel="stylesheet" type="text/css" media="screen, projection" href="@Url.Content("~/Content/green/css/ie.css")" />
+    <![endif]-->
+    <script type="text/javascript" src="../../Content/green/js/slideshow.js"></script>
 
-        @Scripts.Render("~/bundles/jquery")
-        @RenderSection("scripts", required: false)
-    </body>
+    <script type="text/javascript" src="../../Content/green/js/tabber.js">
+    </script>
+    <script type="text/javascript">
+        //<![CDATA[
+
+        /* Optional: Temporarily hide the "tabber" class so it does not "flash"
+       on the page as plain HTML. After tabber runs, the class is changed
+       to "tabberlive" and it will appear. */
+
+        document.write('<style type="text/css">.tabber{display:none;}<\/style>');
+        //]]>
+    </script>
+</head>
+@*<body>
+    <header>
+        <div class="content-wrapper">
+            <div class="float-left">
+                <p class="site-title">@Html.ActionLink("your logo here", "Index", "Home")</p>
+            </div>
+            <div class="float-right">
+                <section id="login">
+                    @Html.Partial("_LoginPartial")
+                </section>
+                <nav>
+                    <ul id="menu">
+                        <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                        <li>@Html.ActionLink("About", "About", "Home")</li>
+                        <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div id="body">
+        @RenderSection("featured", required: false)
+        <section class="content-wrapper main-content clear-fix">
+            @RenderBody()
+        </section>
+    </div>
+    <footer>
+        <div class="content-wrapper">
+            <div class="float-left">
+                <p>&copy; @DateTime.Now.Year - My ASP.NET MVC Application</p>
+            </div>
+        </div>
+    </footer>
+
+    @Scripts.Render("~/bundles/jquery")
+    @RenderSection("scripts", required: false)
+</body>*@
+<body id="home" onload="SLIDES.play();">
+    <div id="outer_wrap" class="container_12">
+        <div id="wrap" class="container_12">
+            <div id="header" class="grid_12">
+                <div id="menu5" class="grid_3">
+                    <ul>
+                        <li><a href="#">Staff Directory</a></li>
+                        <li><a href="#">Audio Messages</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                    @*@Html.Partial("_LoginPartial")*@
+                </div>
+                <div id="logo" style="height: 25px;">
+                    <a href="/">
+                        <img src="Content/green/images/assets/logo.png" alt="logo" /></a>
+                </div>
+                <!-- /logo -->
+                <div id="horiz-menu" class="moomenu">
+                    <ul class="nav">
+                        <li class="current"><span>@Html.ActionLink("Home", "Index", "Home")</span></li>
+                        <li>@Html.ActionLink("About Us", "Index", "AboutUs")</li>
+                        <li>@Html.ActionLink("Worship", "Index", "Worship")</li>
+                        <li>@Html.ActionLink("Need Help", "Index", "Help")</li>
+                        <li>@Html.ActionLink("Get Connected", "Index", "GetConnected")</li>
+                        <li>@Html.ActionLink("Learning", "Index", "Learning")</li>
+                        <li>@Html.ActionLink("News & Events", "Index", "NewsEvent")</li>
+                    </ul>
+                </div>
+                <div class="subname">
+                    @RenderSection("Toolbar", false)
+                </div>
+                <!-- /main_menu -->
+            </div>
+            <!-- /header -->
+            <div class="group"></div>
+
+            <div class="group">
+                <div id="main" class="grid_7">
+                    @RenderSection("featured", required: false)
+                    <section>
+                        @RenderBody()<br />
+                    </section>
+                    <div class="spacer"></div>
+                    <div id="picturebox">
+                        <img src="Content/green/images/assets/small_bibles.jpg" alt="small1" /><img src="Content/green/images/assets/small2.jpg"
+                            alt="small2" /><img src="Content/green/images/assets/small3.jpg" alt="small3" />
+                    </div>
+                    <!-- /picturebox -->
+                    <div id="fp_news">
+                        <h1>Latest News</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque
+                            aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi.
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque
+                            aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi.
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque
+                            aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi.
+                        </p>
+                    </div>
+                    <!-- /fp_news -->
+                </div>
+                <!-- /main -->
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <div id="secondary" class="grid_4">
+                    <div class="lightbox_top"></div>
+                    <div class="lightbox">
+                        <h3>BABA PRAVACHANAMULU:</h3>
+                        <p class="greencolor">Baba Visiting Shirdi - Pravachanam Date: <em>9-18-09</em></p>
+                        <p>
+                            <a href="#" class="button">Listen</a><a href="#" class="button">Download</a>
+                        </p>
+                        <div class="group"></div>
+                    </div>
+                    <div class="lightbox_bottom"></div>
+                    <div class="spacer"></div>
+                    <div class="darkgreen">
+                        <h3>New to us? Check out this Guide</h3>
+                    </div>
+                    <div class="spacer"></div>
+                    <div class="darkbox_top"></div>
+                    <div class="darkbox">
+                        <h3>Worship Times</h3>
+                        <p class="greencolor">
+                            Thursday 6:00, 7:30 pm<br />
+                        </p>
+                        <div class="group"></div>
+                    </div>
+                    <div class="darkbox_bottom"></div>
+                    <div class="spacer"></div>
+                    <div class="lightbox_top"></div>
+                    <div class="lightbox">
+                        <h3>LATEST Events</h3>
+                        <p class="greencolor">
+                            Event Name<br />
+                            <em>November 11-12th</em>
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque
+                            aliquet nibh nec urna. In nisi neque,
+                        </p>
+                        <hr />
+                        <p class="greencolor">
+                            Event Name<br />
+                            <em><span>November 11-12th</span></em>
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque
+                            aliquet nibh nec urna. In nisi neque,
+                        </p>
+                        <div class="group"></div>
+                    </div>
+                    <div class="lightbox_bottom"></div>
+                </div>
+                <!-- /secondary -->
+            </div>
+            <!-- /.group -->
+        </div>
+        <!-- /wrap -->
+    </div>
+    <!-- /outerwrap -->
+    <div id="footer_top"></div>
+    <div id="footer_wrap">
+        <div id="footer" class="container_12">
+            <div class="grid_4">
+                <h3>Sri Shirdi Saibaba Temple</h3>
+                <p>
+                    1449 & 1451 Abers Creek Road,<br />
+                    Monroeville, PA 15146<br />
+                    <strong>412-374-9244</strong>
+                </p>
+            </div>
+            <div class="grid_8">
+                <small>Copyright 2012<img src="Content/green/images/shiderflower.png" alt="stephanie_hider" />
+                </small>
+            </div>
+        </div>
+        <!-- /footer -->
+    </div>
+    <!-- /footer_wrap -->
+    <!-- /fin -->
+</body>
 </html>

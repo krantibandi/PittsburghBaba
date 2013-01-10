@@ -1,0 +1,12 @@
+﻿<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd">
+
+  <!-- Include the individual change log files in the sprint1 folder here in the order they should be executed -->
+  <include file="Update/Sprint1/001_CreateDocumentTables.xml" />
+  <!--<include file="Update/Sprint1/002_InsertDocumentTypeData.xml" />
+  <include file="Update/Sprint1/003_InsertDocumentOwnerTypeData.xml" />
+  <include file="Update/Sprint1/004_InsertDocumentData.xml" />-->
+</databaseChangeLog>

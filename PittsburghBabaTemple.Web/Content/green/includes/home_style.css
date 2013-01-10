@@ -1,0 +1,139 @@
+@charset "utf-8";
+
+/* Header */
+
+body { background: url(../images/menu_bg.png) repeat-x;}
+
+#header {
+	height: 450px;
+	text-align: center;
+}
+
+#tabs ul li { float: left; position: relative; top: -10px; }
+
+#tabs_container { height: 250px; }
+
+.ui-tabs .ui-tabs-nav { list-style: none; position: relative;}
+.ui-tabs .ui-tabs-hide { display: none !important; }
+.ui-tabs .ui-tabs-selected { background: url(../images/tab_active.png) no-repeat top center; }
+.ui-tabs .ui-state-default:not(.ui-tabs-selected):hover { background: url(../images/tab_hover.png) no-repeat top center; }
+
+
+/* Body */
+
+#content {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 12px;
+	color: #666666;
+	width: 680px;
+	float: left;
+	margin-top: 30px;
+	line-height: 20px;
+	display: inline;
+}
+
+#sidebar {
+	width: 300px;
+	float: right;
+	margin-top: 30px;
+	margin-left: 10px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 12px;
+	color: #666666;
+	display: inline;
+}
+
+.newsitem { /* News Item */
+	clear: both;
+}
+
+.newsitem_pic {
+	padding: 10px;
+	background: #f2f2f2;
+	border: solid #bfbfbf 1px;
+	height: 130px;
+	width: 180px;
+	margin-bottom: 20px;
+	margin-right: 20px;
+	float: left;
+}
+
+.newsitem_pic:hover {
+	border: solid #9d9d9d 1px;
+}
+
+.newsitem_content h2 a { text-decoration: none; }
+
+.testimonial_container { /* Testimonial box */
+	background-color: #d9d9d9;
+	border-left: solid #bfbfbf 1px;
+	border-right: solid #bfbfbf 1px;
+	width: 300px;
+	height: auto;
+	padding-left: 9px;
+	padding-right: 9px;
+	margin-top: 0;
+	position: relative;
+	top: -3px;
+}
+
+.testimonial { 
+	background-color: #f2f2f2;
+	color: #666666;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-style:italic;
+	font-size: 22px;
+	padding-left: 22px;
+	padding-right: 22px;
+	border-left: solid #bfbfbf 1px;
+	border-right: solid #bfbfbf 1px;
+}
+
+.testimonial_person {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 14px;
+	font-style: italic;
+	text-align: right;
+}
+
+ul.checkmarklist {
+	list-style-image: url(../images/checkmark.png);
+	line-height: 24px;
+}
+
+ul.checkmarklist li {
+	margin-left: 2em;
+	padding-left: 2em;
+}
+
+/* No specific footer styles for index.html */
+
+
+h2 { font-size: 26px; color: #265B1F; line-height:30px; font-weight: normal; border-bottom: 1px solid #aeaaa2; padding-bottom: 14px; word-spacing: 1px; }
+
+h1 { font-size: 35px; color: #1c2c1a; font-weight: normal; border-bottom: 1px solid #aeaaa2; padding-bottom: 14px; word-spacing: 1px; }
+/*----------------------------------
+		DETAILS
+	----------------------------------*/
+	.copywide { width: 480px; }
+	.details_box { border-top: 1px solid #aeaaa2; margin: 25px 0 0px 0; padding: 30px 0 35px 0; width: 670px; float: left; }
+	
+	.details_box2 { margin: 25px 0 0px 0; padding: 30px 0 15px 0; width: 590px; float: left; }
+
+	.img { float: left; margin-right: 30px; }
+
+	.img2 { float: left; margin-right: 30px; width: 65px; }
+	
+	.copy { float: left; width: 570px; }
+	
+	.price { float: left; }
+
+	.details_box p { font-size: 12px; line-height: 20px; }
+	.details_box2 p { font-size: 12px; line-height: 16px; }
+	
+	.game_details p, .game_details2 p { 
+		color: #757576;
+		font-size: 12px;
+		line-height: 10px;
+	}
+	h2.steps_head { border-bottom: none; color: #1C2C1A; padding: 0; margin: 0; padding-bottom: 5px; font-size: 2.3em;}

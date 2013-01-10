@@ -1,0 +1,86 @@
+@charset "utf-8";
+
+img, div, div#header { behavior: url(iepngfix.htc) } /* IE PNG Fix */
+
+body { 
+	text-align: center; /* Because margin auto doesn't work on IE6 for some reason. */
+}
+
+.container {
+	width: 1020px;
+	text-align: left;
+}
+
+#header {
+	height: 450px;
+}
+
+#menu {
+	background: none;
+}
+
+#menu ul li:hover {
+	background: none;
+}
+#menu ul li a:hover {
+	background: none;
+}
+
+#menu ul li a.active:hover {
+	background: url(../images/navlink_bgend.png) no-repeat;
+	background-position: 100% 0%;
+}
+
+.testimonial_container {
+	background-color: #d9d9d9;
+	border-left: solid #bfbfbf 1px;
+	border-right: solid #bfbfbf 1px;
+	width: 315px;
+	height: auto;
+	padding-left: 9px;
+	padding-right: 9px;
+	margin-top: 0;
+	position: relative;
+	top: -3px;
+}
+
+.testimonial {
+	background-color: #f2f2f2;
+	color: #666666;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-style:italic;
+	font-size: 22px;
+	padding-left: 22px;
+	padding-right: 22px;
+	border-left: solid #bfbfbf 1px;
+	border-right: solid #bfbfbf 1px;
+}
+
+.testimonial_person {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 14px;
+	font-style: italic;
+	text-align: right;
+}
+
+ul.checkmarklist {
+	list-style-image: url(../images/checkmark.png);
+	line-height: 24px;
+}
+
+ul.checkmarklist li {
+margin-left: 2em;
+padding-left: 2em;
+} 
+
+#footer_left {
+	padding-top: 30px;
+}
+
+#footer_right {
+	padding-top: 30px;
+}
+
+#footer_copyright {
+	height: 50px;
+}

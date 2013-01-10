@@ -1,0 +1,111 @@
+/* Portfolio page stylesheet */
+
+@charset "utf-8";
+
+/* Header */
+
+body { background: url(../images/portfolio_headerbg.png) repeat-x;}
+
+#header {
+	height: 500px;
+}
+
+/* Portfolio Navigation */
+#pncontainer {
+	position: relative;
+}
+
+#pn {
+	width: 1020px;
+	height: 400px;
+	position: relative;
+	overflow: auto;
+}
+
+/* Single Project Item */
+.slide {
+	width: 1000px;
+	height: 450px;
+	position: relative;
+	float: left;
+	top: 0px;
+}
+
+/* Previous Button */
+#prev {
+	position: absolute;
+	top: 150px;
+	left: 0px;
+	z-index: 1000;
+}
+
+/* Portfolio Navigation Picture */
+.pn_pic {
+	position: absolute;
+	top: 50px;
+	left: 90px;
+}
+
+/* Next Button */
+#next {
+	position: absolute;
+	top: 150px;
+	left: 420px;
+	z-index: 1000;
+}
+
+/* PN Description */
+.pn_desc {
+	color: #cccccc;
+	font-size: 12px;
+	position: absolute;
+	top: 50px;
+	left: 510px;
+	width: 490px;
+	
+}
+
+/* PN Description header */
+.pn_desc h2 {
+	color: #ffffff;
+}
+
+#pn a.viewproject {
+	color: #00b4ff;
+}
+
+/* Content */
+#content {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 12px;
+	color: #666666;
+	float: left;
+	margin-top: 30px;
+	line-height: 20px;
+	display: inline;
+}
+
+/* View project link */
+a.viewproject {
+	font-style: italic;
+}
+
+#content a.viewproject {
+	color: #0f7fd6;
+}
+
+/* Project shot */
+.projectpic {
+	border: solid #d9d9d9 1px;
+	background: #f2f2f2;
+	padding: 10px;
+	width: 640px;
+	float: left;
+	margin-bottom: 20px; margin-right: 20px;
+}
+
+.projectpic:hover {
+	border: solid #c7c7c7 1px;
+}
+
+/* No specific footer styles for portfolio.html */
