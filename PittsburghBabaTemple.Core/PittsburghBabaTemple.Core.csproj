@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B50742E0-C868-4BCC-86A3-7E422149662F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PittsburghBabaTemple.Core</RootNamespace>
+    <AssemblyName>PittsburghBabaTemple.Core</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Castle.Core">
+      <HintPath>..\packages\Castle.Core.3.1.0\lib\net40-client\Castle.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Common.Logging">
+      <HintPath>..\packages\Common.Logging.2.1.2\lib\net40\Common.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="FluentNHibernate">
+      <HintPath>..\packages\FluentNHibernate.1.3.0.733\lib\FluentNHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="Iesi.Collections">
+      <HintPath>..\packages\Iesi.Collections.3.2.0.4000\lib\Net35\Iesi.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\packages\log4net.2.0.0\lib\net40-full\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate">
+      <HintPath>..\packages\NHibernate.3.3.2.4000\lib\Net35\NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="RazorEngine">
+      <HintPath>..\packages\RazorEngine.3.0.8\lib\net40\RazorEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Caching" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Web.Razor, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\RazorEngine.3.0.8\lib\net40\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Authentication\AccountDeletedResponse.cs" />
+    <Compile Include="Authentication\AccountIncorrectPasswordResponse.cs" />
+    <Compile Include="Authentication\AccountLockedResponse.cs" />
+    <Compile Include="Authentication\AccountSuspendedResponse.cs" />
+    <Compile Include="Authentication\IAuthenticationResponse.cs" />
+    <Compile Include="Authentication\SuccessResponse.cs" />
+    <Compile Include="Data\ActiveRecordBase.cs" />
+    <Compile Include="Data\AutoMapConfig.cs" />
+    <Compile Include="Data\Conventions\CascadeConvention.cs" />
+    <Compile Include="Data\Conventions\CustomForeignKeyConvention.cs" />
+    <Compile Include="Data\Conventions\EnumConvention.cs" />
+    <Compile Include="Data\IFetchingStrategy.cs" />
+    <Compile Include="Data\IFetchMode.cs" />
+    <Compile Include="Data\SessionConfiguration.cs" />
+    <Compile Include="Enums\ChangePasswordReturnTypes.cs" />
+    <Compile Include="Enums\SecurityAuditEvent.cs" />
+    <Compile Include="Extensions\StringExtension.cs" />
+    <Compile Include="Interfaces\IEntity.cs" />
+    <Compile Include="Interfaces\IUserAccount.cs" />
+    <Compile Include="Model\AccountRequest.cs" />
+    <Compile Include="Model\Country.cs" />
+    <Compile Include="Model\ModelEntity.cs" />
+    <Compile Include="Model\Password.cs" />
+    <Compile Include="Model\ResponsibilityAnswer.cs" />
+    <Compile Include="Model\ResponsibilityQuestion.cs" />
+    <Compile Include="Model\Role.cs" />
+    <Compile Include="Model\RoleChangeRequest.cs" />
+    <Compile Include="Model\SecurityAuditLog.cs" />
+    <Compile Include="Model\State.cs" />
+    <Compile Include="Model\User.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Security\PbtRoleProvider.cs" />
+    <Compile Include="Web\LowercaseRoute.cs" />
+    <Compile Include="Web\PbtViewEngine.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ChangeLogs\dropall.bat" />
+    <None Include="ChangeLogs\importData.bat" />
+    <None Include="ChangeLogs\importSchema.bat" />
+    <None Include="ChangeLogs\install.bat" />
+    <None Include="ChangeLogs\install_local.bat" />
+    <None Include="ChangeLogs\install_production.bat" />
+    <None Include="ChangeLogs\rollback.bat" />
+    <None Include="ChangeLogs\update.bat" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Attributes\" />
+    <Folder Include="CacheProvider\" />
+    <Folder Include="ChangeLogs\Update\Sprint1\data\" />
+    <Folder Include="Constants\" />
+    <Folder Include="EmailTemplates\" />
+    <Folder Include="Service\" />
+    <Folder Include="Utils\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ChangeLogs\convert.xml" />
+    <Content Include="ChangeLogs\install.xml" />
+    <Content Include="ChangeLogs\Install\master.xml" />
+    <Content Include="ChangeLogs\Legacy\master.xml" />
+    <Content Include="ChangeLogs\update.xml" />
+    <Content Include="ChangeLogs\Update\sprint1.xml" />
+    <Content Include="ChangeLogs\Update\Sprint1\001_CreateOrAlterTables.xml">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

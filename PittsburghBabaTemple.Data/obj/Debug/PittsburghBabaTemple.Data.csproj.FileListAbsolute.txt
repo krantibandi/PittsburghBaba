@@ -1,0 +1,5 @@
+C:\My Dev\My Projects\Personal\PittsburghBabaTemple\PittsburghBabaTemple.Data\bin\Debug\PittsburghBabaTemple.Data.dll
+C:\My Dev\My Projects\Personal\PittsburghBabaTemple\PittsburghBabaTemple.Data\bin\Debug\PittsburghBabaTemple.Data.pdb
+C:\My Dev\My Projects\Personal\PittsburghBabaTemple\PittsburghBabaTemple.Data\obj\Debug\PittsburghBabaTemple.Data.csprojResolveAssemblyReference.cache
+C:\My Dev\My Projects\Personal\PittsburghBabaTemple\PittsburghBabaTemple.Data\obj\Debug\PittsburghBabaTemple.Data.dll
+C:\My Dev\My Projects\Personal\PittsburghBabaTemple\PittsburghBabaTemple.Data\obj\Debug\PittsburghBabaTemple.Data.pdb

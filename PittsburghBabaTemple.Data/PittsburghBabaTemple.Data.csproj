@@ -41,8 +41,10 @@
   <ItemGroup>
     <Compile Include="Class1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Security\RoleProvider.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Attributes\" />
     <Folder Include="ChangeLogs\Update\Sprint1\data\" />
   </ItemGroup>
   <ItemGroup>
@@ -54,7 +56,9 @@
     <None Include="ChangeLogs\install_production.bat" />
     <Content Include="ChangeLogs\update.xml" />
     <Content Include="ChangeLogs\Update\sprint1.xml" />
-    <Content Include="ChangeLogs\Update\Sprint1\001_CreateOrAlterTables.xml" />
+    <Content Include="ChangeLogs\Update\Sprint1\001_CreateOrAlterTables.xml">
+      <SubType>Designer</SubType>
+    </Content>
     <None Include="ChangeLogs\importSchema.bat" />
     <None Include="ChangeLogs\dropall.bat" />
     <None Include="ChangeLogs\importData.bat" />

@@ -1,0 +1,17 @@
+﻿<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd">
+
+  <preConditions>
+    <!-- These changes should only be run against a schema version 0 -->
+    <sqlCheck expectedResult="0">
+      SELECT ISNULL(MAX(id),0)
+      FROM databasechangelog
+      WHERE author='SchemaVersion'
+    </sqlCheck>
+  </preConditions>
+
+  <include file="Update/sprint1.xml" />
+</databaseChangeLog>

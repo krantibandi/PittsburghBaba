@@ -1,0 +1,46 @@
+﻿<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd">
+
+  <changeSet author="Kranti" id="sprint1_1">
+    <comment>Create the Tables for documents in Document Library Modle</comment>
+    <!-- Create Document Type table-->
+    <createTable schemaName="dbo" tableName="tblDocumentType">
+      <column autoIncrement="true" name="DocumentTypeId" type="int identity">
+        <constraints nullable="false" primaryKey="true" primaryKeyName="PK_DOCUMENTTYPE" />
+      </column>
+      <column name="DocumentTypeName" type="VARCHAR(50)">
+        <constraints nullable="false" />
+      </column>
+    </createTable>
+    
+    <!--Create Document Table-->
+    <createTable schemaName="dbo" tableName="tblDocument">
+      <column autoIncrement="true" name="DocumentId" type="int identity">
+        <constraints nullable="false" primaryKey="true" primaryKeyName="PK_DOCUMENT" />
+      </column>
+      <column name="DocumentOwnerTypeId" type="int">
+        <constraints nullable="false" />
+      </column>
+      <column name="DocumentOwnerId" type="int">
+        <constraints nullable="false" />
+      </column>
+      <column name="DocumentTypeId" type="int">
+        <constraints nullable="false" />
+      </column>
+      <column name="Title" type="varchar(100)">
+        <constraints nullable="false" />
+      </column>
+      <column name="FileName" type="varchar(100)">
+        <constraints nullable="false" />
+      </column>
+      <column name="CreatedDate" type="datetime">
+        <constraints nullable="false" />
+      </column>
+    </createTable>
+
+  </changeSet>
+
+</databaseChangeLog>
