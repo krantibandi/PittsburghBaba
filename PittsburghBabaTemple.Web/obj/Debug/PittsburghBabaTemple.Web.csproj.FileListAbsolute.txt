@@ -47,3 +47,15 @@ C:\My Dev\My Projects\Personal\PittsburghBabaTemple\PittsburghBabaTemple.Web\bin
 C:\My Dev\My Projects\Personal\PittsburghBabaTemple\PittsburghBabaTemple.Web\obj\Debug\PittsburghBabaTemple.Web.csprojResolveAssemblyReference.cache
 C:\My Dev\My Projects\Personal\PittsburghBabaTemple\PittsburghBabaTemple.Web\obj\Debug\PittsburghBabaTemple.Web.dll
 C:\My Dev\My Projects\Personal\PittsburghBabaTemple\PittsburghBabaTemple.Web\obj\Debug\PittsburghBabaTemple.Web.pdb
+C:\My Dev\My Projects\Personal\PittsburghBabaTemple\PittsburghBabaTemple.Web\bin\AutoMapper.dll
+C:\My Dev\My Projects\Personal\PittsburghBabaTemple\PittsburghBabaTemple.Web\bin\Iesi.Collections.dll
+C:\My Dev\My Projects\Personal\PittsburghBabaTemple\PittsburghBabaTemple.Web\bin\NHibernate.dll
+C:\My Dev\My Projects\Personal\PittsburghBabaTemple\PittsburghBabaTemple.Web\bin\PittsburghBabaTemple.Core.dll
+C:\My Dev\My Projects\Personal\PittsburghBabaTemple\PittsburghBabaTemple.Web\bin\FluentNHibernate.dll
+C:\My Dev\My Projects\Personal\PittsburghBabaTemple\PittsburghBabaTemple.Web\bin\log4net.dll
+C:\My Dev\My Projects\Personal\PittsburghBabaTemple\PittsburghBabaTemple.Web\bin\PittsburghBabaTemple.Core.pdb
+C:\My Dev\My Projects\Personal\PittsburghBabaTemple\PittsburghBabaTemple.Web\bin\AutoMapper.xml
+C:\My Dev\My Projects\Personal\PittsburghBabaTemple\PittsburghBabaTemple.Web\bin\Iesi.Collections.xml
+C:\My Dev\My Projects\Personal\PittsburghBabaTemple\PittsburghBabaTemple.Web\bin\NHibernate.xml
+C:\My Dev\My Projects\Personal\PittsburghBabaTemple\PittsburghBabaTemple.Web\bin\FluentNHibernate.xml
+C:\My Dev\My Projects\Personal\PittsburghBabaTemple\PittsburghBabaTemple.Web\bin\log4net.xml

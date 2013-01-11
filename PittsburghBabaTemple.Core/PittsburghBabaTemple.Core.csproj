@@ -73,6 +73,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Attributes\HandleCustomAttribute.cs" />
     <Compile Include="Authentication\AccountDeletedResponse.cs" />
     <Compile Include="Authentication\AccountIncorrectPasswordResponse.cs" />
     <Compile Include="Authentication\AccountLockedResponse.cs" />
@@ -94,6 +95,7 @@
     <Compile Include="Interfaces\IUserAccount.cs" />
     <Compile Include="Model\AccountRequest.cs" />
     <Compile Include="Model\Country.cs" />
+    <Compile Include="Model\ErrorLog.cs" />
     <Compile Include="Model\ModelEntity.cs" />
     <Compile Include="Model\Password.cs" />
     <Compile Include="Model\ResponsibilityAnswer.cs" />
@@ -120,7 +122,6 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Attributes\" />
     <Folder Include="CacheProvider\" />
     <Folder Include="ChangeLogs\Update\Sprint1\data\" />
     <Folder Include="Constants\" />
